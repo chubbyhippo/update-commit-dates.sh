@@ -19,12 +19,12 @@ A shell script to modify the **committer date** and **author date** of a specifi
 ## Usage
 
 ### Syntax:
-```bash
+```shell
 ./update-commit-dates.sh <commit-id> <committer-date> <author-date>
 ```
 
 ### Example:
-```bash
+```shell
 ./update-commit-dates.sh abc123 "2023-01-01 12:00:00" "2023-01-01 12:00:00"
 ```
 
