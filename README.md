@@ -17,6 +17,10 @@ A shell script to modify the **committer date** and **author date** of a specifi
 ---
 
 ## Usage
+### Make executable
+```shell
+chmod +x update-commit-dates.sh
+```
 
 ### Syntax:
 ```shell
