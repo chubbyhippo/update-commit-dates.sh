@@ -17,7 +17,7 @@ A shell script to modify the **committer date** and **author date** of a specifi
 ---
 
 ## Usages
-### Curl
+### curl
 ```
 curl https://raw.githubusercontent.com/chubbyhippo/update-commit-dates.sh/refs/heads/main/update-commit-dates.sh | /usr/bin/env sh abc123 "2023-01-01 12:00:00" "2023-01-01 12:00:00"
 ```
