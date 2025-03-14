@@ -15,10 +15,9 @@ A shell script to modify the **committer date** and **author date** of a specifi
 - Backup the repository if the commit history is shared with others, as rewriting history will require a forced push.
 
 ---
-
 ## Usages
 ### curl
-```
+```shell
 curl https://raw.githubusercontent.com/chubbyhippo/update-commit-dates.sh/refs/heads/main/update-commit-dates.sh | /usr/bin/env sh -s abc123 "2023-01-01 12:00:00" "2023-01-01 12:00:00"
 ```
 ### Make executable:
