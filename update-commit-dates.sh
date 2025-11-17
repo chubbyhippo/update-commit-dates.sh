@@ -2,14 +2,14 @@
 
 # Check if the required parameters are provided
 if [ "$#" -ne 3 ]; then
-    echo "Usage: $0 <commit-id> <committer-date> <author-date>"
-    echo "Example: $0 abc123 '2023-01-01 12:00:00' '2023-01-01 12:00:00'"
+    echo "Usage: $0 <committer-date> <author-date> <commit-id>"
+    echo "Example: $0 '2023-01-01 12:00:00' '2023-01-01 12:00:00' abc123"
     exit 1
 fi
 
-COMMIT_ID=$1
-COMMITTER_DATE=$2
-AUTHOR_DATE=$3
+COMMITTER_DATE=$1
+AUTHOR_DATE=$2
+COMMIT_ID=$3
 # Get the name of the current branch
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
