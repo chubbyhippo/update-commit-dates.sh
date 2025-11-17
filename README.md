@@ -22,7 +22,7 @@ curl https://raw.githubusercontent.com/chubbyhippo/update-commit-dates.sh/refs/h
 ## Usages
 ### curl
 ```shell
-curl https://raw.githubusercontent.com/chubbyhippo/update-commit-dates.sh/refs/heads/main/update-commit-dates.sh | /usr/bin/env sh -s abc123 "2023-01-01 12:00:00" "2023-01-01 12:00:00"
+curl https://raw.githubusercontent.com/chubbyhippo/update-commit-dates.sh/refs/heads/main/update-commit-dates.sh | /usr/bin/env sh -s "2023-01-01 12:00:00" "2023-01-01 12:00:00" 1749cf78
 ```
 ### Make executable:
 ```shell
@@ -31,17 +31,17 @@ chmod +x update-commit-dates.sh
 
 ### Syntax:
 ```shell
-./update-commit-dates.sh <commit-id> <committer-date> <author-date>
+./update-commit-dates.sh <committer-date> <author-date> <commit-id> 
 ```
 
 ### Example:
 ```shell
-./update-commit-dates.sh abc123 "2023-01-01 12:00:00" "2023-01-01 12:00:00"
+./update-commit-dates.sh "2023-01-01 12:00:00" "2023-01-01 12:00:00" 1749cf78
 ```
 
 In this example:
-- Replace `abc123` with the Git hash of the commit you want to update.
 - The `committer-date` and `author-date` should be provided in the format `YYYY-MM-DD HH:MM:SS`.
+- Replace `1749cf78` with the Git hash of the commit you want to update.
 
 ---
 
